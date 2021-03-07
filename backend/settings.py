@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
-import django_heroku
 from pathlib import Path
 
 from datetime import timedelta
@@ -200,5 +199,3 @@ AWS_STORAGE_BUCKET_NAME = 'proshop-bucket-ecom'
 # If we are on heroku (prod) debug set to False
 if os.getcwd() == '/app':
     DEBUG = False
-
-django_heroku.settings(locals())
